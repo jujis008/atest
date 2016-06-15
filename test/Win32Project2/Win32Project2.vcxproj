@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{83903897-9AE9-4770-ACF5-9C18918D086F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Win32Project2</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS ;WIN32;_DEBUG;_WINDOWS;_USRDLL;WIN32PROJECT2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\vs2015\test\zlib;C:\vs2015\test\zlib\contrib\minizip;C:\vs2015\test\png;C:\vs2015\test\nspr;C:\vs2015\test\nghttp2;C:\vs2015\test\nghttp2\lib\includes;C:\vs2015\test\mozjpeg;C:\vs2015\test\cximage;C:\Program Files\Java\jdk1.7.0_15\include\win32;C:\Program Files\Java\jdk1.7.0_15\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <DisableSpecificWarnings>4703;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;Psapi.lib;Imagehlp.lib;version.lib;wininet.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Ws2_32.lib;winmm.lib;Wtsapi32.lib;</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\vs2015\test\nghttp2\lib\includes;C:\vs2015\test\nghttp2;C:\vs2015\test\zlib\contrib\minizip;C:\vs2015\test\zlib;C:\vs2015\test\mozjpeg;C:\vs2015\test\nspr;C:\vs2015\test\png;C:\vs2015\test\cximage;C:\Program Files\Java\jdk1.7.0_15\include;C:\Program Files\Java\jdk1.7.0_15\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4703;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;Psapi.lib;Imagehlp.lib;version.lib;wininet.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Ws2_32.lib;winmm.lib;Wtsapi32.lib;</AdditionalDependencies>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS ;WIN32;NDEBUG;_WINDOWS;_USRDLL;WIN32PROJECT2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\vs2015\test\zlib;C:\vs2015\test\zlib\contrib\minizip;C:\vs2015\test\png;C:\vs2015\test\nspr;C:\vs2015\test\nghttp2;C:\vs2015\test\nghttp2\lib\includes;C:\vs2015\test\mozjpeg;C:\vs2015\test\cximage;C:\Program Files\Java\jdk1.7.0_15\include\win32;C:\Program Files\Java\jdk1.7.0_15\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <DisableSpecificWarnings>4703;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;Psapi.lib;Imagehlp.lib;version.lib;wininet.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Ws2_32.lib;winmm.lib;Wtsapi32.lib;</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\vs2015\test\nghttp2\lib\includes;C:\vs2015\test\nghttp2;C:\vs2015\test\zlib\contrib\minizip;C:\vs2015\test\zlib;C:\vs2015\test\mozjpeg;C:\vs2015\test\nspr;C:\vs2015\test\png;C:\vs2015\test\cximage;C:\Program Files\Java\jdk1.7.0_15\include;C:\Program Files\Java\jdk1.7.0_15\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4703;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;Psapi.lib;Imagehlp.lib;version.lib;wininet.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Ws2_32.lib;winmm.lib;Wtsapi32.lib;</AdditionalDependencies>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\crypt.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\ioapi.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\iowin32.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\mztools.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\unzip.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\zip.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\crc32.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\deflate.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\gzguts.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\inffast.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\inffixed.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\inflate.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\trees.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\zconf.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\zlib.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\zutil.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\include\distorm.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\include\mnemonics.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\config.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\decoder.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\instructions.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\insts.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\operands.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\prefix.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\textdefs.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\wstring.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\x86defs.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\mongoose\mongoose.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\NCodeHook\NCodeHook.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\NCodeHook\NCodeHookInstantiation.h" />
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\NCodeHook\NCodeHookItem.h" />
+    <ClInclude Include="..\cximage\xfile.h" />
+    <ClInclude Include="..\cximage\ximabmp.h" />
+    <ClInclude Include="..\cximage\ximacfg.h" />
+    <ClInclude Include="..\cximage\ximadef.h" />
+    <ClInclude Include="..\cximage\ximage.h" />
+    <ClInclude Include="..\cximage\ximagif.h" />
+    <ClInclude Include="..\cximage\ximaico.h" />
+    <ClInclude Include="..\cximage\ximaiter.h" />
+    <ClInclude Include="..\cximage\ximajas.h" />
+    <ClInclude Include="..\cximage\ximajbg.h" />
+    <ClInclude Include="..\cximage\ximajpg.h" />
+    <ClInclude Include="..\cximage\ximamng.h" />
+    <ClInclude Include="..\cximage\ximapcx.h" />
+    <ClInclude Include="..\cximage\ximapng.h" />
+    <ClInclude Include="..\cximage\ximapsd.h" />
+    <ClInclude Include="..\cximage\ximaraw.h" />
+    <ClInclude Include="..\cximage\ximaska.h" />
+    <ClInclude Include="..\cximage\ximatga.h" />
+    <ClInclude Include="..\cximage\ximath.h" />
+    <ClInclude Include="..\cximage\ximatif.h" />
+    <ClInclude Include="..\cximage\ximawbmp.h" />
+    <ClInclude Include="..\cximage\ximawmf.h" />
+    <ClInclude Include="..\cximage\xiofile.h" />
+    <ClInclude Include="..\cximage\xmemfile.h" />
+    <ClInclude Include="..\mozjpeg\jchuff.h" />
+    <ClInclude Include="..\mozjpeg\jcmaster.h" />
+    <ClInclude Include="..\mozjpeg\jconfig.h" />
+    <ClInclude Include="..\mozjpeg\jconfigint.h" />
+    <ClInclude Include="..\mozjpeg\jdct.h" />
+    <ClInclude Include="..\mozjpeg\jdhuff.h" />
+    <ClInclude Include="..\mozjpeg\jerror.h" />
+    <ClInclude Include="..\mozjpeg\jinclude.h" />
+    <ClInclude Include="..\mozjpeg\jmemsys.h" />
+    <ClInclude Include="..\mozjpeg\jmorecfg.h" />
+    <ClInclude Include="..\mozjpeg\jpegcomp.h" />
+    <ClInclude Include="..\mozjpeg\jpegint.h" />
+    <ClInclude Include="..\mozjpeg\jpeglib.h" />
+    <ClInclude Include="..\mozjpeg\jpeg_nbits_table.h" />
+    <ClInclude Include="..\mozjpeg\jsimd.h" />
+    <ClInclude Include="..\mozjpeg\jsimddct.h" />
+    <ClInclude Include="..\mozjpeg\jversion.h" />
+    <ClInclude Include="..\mozjpeg\transupp.h" />
+    <ClInclude Include="..\nghttp2\lib\includes\nghttp2\nghttp2.h" />
+    <ClInclude Include="..\nghttp2\lib\includes\nghttp2\nghttp2ver.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_buf.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_callbacks.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_frame.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_hd.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_hd_huffman.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_helper.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_http.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_int.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_map.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_mem.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_net.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_npn.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_option.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_outbound_item.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_pq.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_priority_spec.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_queue.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_session.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_stream.h" />
+    <ClInclude Include="..\nghttp2\lib\nghttp2_submit.h" />
+    <ClInclude Include="..\nspr\md\_freebsd.h" />
+    <ClInclude Include="..\nspr\md\_linux.h" />
+    <ClInclude Include="..\nspr\md\_win95.h" />
+    <ClInclude Include="..\nspr\md\_winnt.h" />
+    <ClInclude Include="..\nspr\obsolete\protypes.h" />
+    <ClInclude Include="..\nspr\prinet.h" />
+    <ClInclude Include="..\nspr\prinrval.h" />
+    <ClInclude Include="..\nspr\prio.h" />
+    <ClInclude Include="..\nspr\private\pprio.h" />
+    <ClInclude Include="..\nspr\prlong.h" />
+    <ClInclude Include="..\nspr\prtime.h" />
+    <ClInclude Include="..\nspr\prtypes.h" />
+    <ClInclude Include="..\png\png.h" />
+    <ClInclude Include="..\png\pngconf.h" />
+    <ClInclude Include="..\png\pngdebug.h" />
+    <ClInclude Include="..\png\pnginfo.h" />
+    <ClInclude Include="..\png\pnglibconf.h" />
+    <ClInclude Include="..\png\pngpriv.h" />
+    <ClInclude Include="..\png\pngstruct.h" />
+    <ClInclude Include="com_natives_test_Test.h" />
+    <ClInclude Include="com_successfactors_saf_framework_video_service_CaptureImage.h" />
+    <ClInclude Include="hook.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="result.h" />
+    <ClInclude Include="screen_capture.h" />
+    <ClInclude Include="shared_mem.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="testcase.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="wrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\adler32.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\compress.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\ioapi.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\iowin32.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\miniunz.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\minizip.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\mztools.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\unzip.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\zip.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\crc32.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\deflate.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\gzclose.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\gzlib.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\gzread.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\gzwrite.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\infback.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\inffast.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\inflate.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\inftrees.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\trees.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\uncompr.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\zutil.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\include\mnemonics.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\decoder.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\distorm.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\instructions.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\insts.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\operands.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\prefix.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\textdefs.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\wstring.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\x86defs.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\mongoose\mongoose.c" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\NCodeHook\NCodeHook.cpp" />
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\NCodeHook\NCodeHookItem.cpp" />
+    <ClCompile Include="..\cximage\tif_xfile.cpp" />
+    <ClCompile Include="..\cximage\ximabmp.cpp" />
+    <ClCompile Include="..\cximage\ximadsp.cpp" />
+    <ClCompile Include="..\cximage\ximaenc.cpp" />
+    <ClCompile Include="..\cximage\ximaexif.cpp" />
+    <ClCompile Include="..\cximage\ximage.cpp" />
+    <ClCompile Include="..\cximage\ximagif.cpp" />
+    <ClCompile Include="..\cximage\ximahist.cpp" />
+    <ClCompile Include="..\cximage\ximaico.cpp" />
+    <ClCompile Include="..\cximage\ximainfo.cpp" />
+    <ClCompile Include="..\cximage\ximaint.cpp" />
+    <ClCompile Include="..\cximage\ximajas.cpp" />
+    <ClCompile Include="..\cximage\ximajbg.cpp" />
+    <ClCompile Include="..\cximage\ximajpg.cpp" />
+    <ClCompile Include="..\cximage\ximalpha.cpp" />
+    <ClCompile Include="..\cximage\ximalyr.cpp" />
+    <ClCompile Include="..\cximage\ximamng.cpp" />
+    <ClCompile Include="..\cximage\ximapal.cpp" />
+    <ClCompile Include="..\cximage\ximapcx.cpp" />
+    <ClCompile Include="..\cximage\ximapng.cpp" />
+    <ClCompile Include="..\cximage\ximapsd.cpp" />
+    <ClCompile Include="..\cximage\ximaraw.cpp" />
+    <ClCompile Include="..\cximage\ximasel.cpp" />
+    <ClCompile Include="..\cximage\ximaska.cpp" />
+    <ClCompile Include="..\cximage\ximatga.cpp" />
+    <ClCompile Include="..\cximage\ximath.cpp" />
+    <ClCompile Include="..\cximage\ximatif.cpp" />
+    <ClCompile Include="..\cximage\ximatran.cpp" />
+    <ClCompile Include="..\cximage\ximawbmp.cpp" />
+    <ClCompile Include="..\cximage\ximawmf.cpp" />
+    <ClCompile Include="..\cximage\ximawnd.cpp" />
+    <ClCompile Include="..\cximage\xmemfile.cpp" />
+    <ClCompile Include="..\mozjpeg\jaricom.c" />
+    <ClCompile Include="..\mozjpeg\jcapimin.c" />
+    <ClCompile Include="..\mozjpeg\jcapistd.c" />
+    <ClCompile Include="..\mozjpeg\jccoefct.c" />
+    <ClCompile Include="..\mozjpeg\jccolor.c" />
+    <ClCompile Include="..\mozjpeg\jcdctmgr.c" />
+    <ClCompile Include="..\mozjpeg\jcext.c" />
+    <ClCompile Include="..\mozjpeg\jchuff.c" />
+    <ClCompile Include="..\mozjpeg\jcinit.c" />
+    <ClCompile Include="..\mozjpeg\jcmainct.c" />
+    <ClCompile Include="..\mozjpeg\jcmarker.c" />
+    <ClCompile Include="..\mozjpeg\jcmaster.c" />
+    <ClCompile Include="..\mozjpeg\jcomapi.c" />
+    <ClCompile Include="..\mozjpeg\jcparam.c" />
+    <ClCompile Include="..\mozjpeg\jcphuff.c" />
+    <ClCompile Include="..\mozjpeg\jcprepct.c" />
+    <ClCompile Include="..\mozjpeg\jcsample.c" />
+    <ClCompile Include="..\mozjpeg\jctrans.c" />
+    <ClCompile Include="..\mozjpeg\jdapimin.c" />
+    <ClCompile Include="..\mozjpeg\jdapistd.c" />
+    <ClCompile Include="..\mozjpeg\jdatadst-tj.c" />
+    <ClCompile Include="..\mozjpeg\jdatadst.c" />
+    <ClCompile Include="..\mozjpeg\jdatasrc-tj.c" />
+    <ClCompile Include="..\mozjpeg\jdatasrc.c" />
+    <ClCompile Include="..\mozjpeg\jdcoefct.c" />
+    <ClCompile Include="..\mozjpeg\jdcolor.c" />
+    <ClCompile Include="..\mozjpeg\jddctmgr.c" />
+    <ClCompile Include="..\mozjpeg\jdhuff.c" />
+    <ClCompile Include="..\mozjpeg\jdinput.c" />
+    <ClCompile Include="..\mozjpeg\jdmainct.c" />
+    <ClCompile Include="..\mozjpeg\jdmarker.c" />
+    <ClCompile Include="..\mozjpeg\jdmaster.c" />
+    <ClCompile Include="..\mozjpeg\jdmerge.c" />
+    <ClCompile Include="..\mozjpeg\jdphuff.c" />
+    <ClCompile Include="..\mozjpeg\jdpostct.c" />
+    <ClCompile Include="..\mozjpeg\jdsample.c" />
+    <ClCompile Include="..\mozjpeg\jdtrans.c" />
+    <ClCompile Include="..\mozjpeg\jerror.c" />
+    <ClCompile Include="..\mozjpeg\jfdctflt.c" />
+    <ClCompile Include="..\mozjpeg\jfdctfst.c" />
+    <ClCompile Include="..\mozjpeg\jfdctint.c" />
+    <ClCompile Include="..\mozjpeg\jidctflt.c" />
+    <ClCompile Include="..\mozjpeg\jidctfst.c" />
+    <ClCompile Include="..\mozjpeg\jidctint.c" />
+    <ClCompile Include="..\mozjpeg\jidctred.c" />
+    <ClCompile Include="..\mozjpeg\jmemmgr.c" />
+    <ClCompile Include="..\mozjpeg\jmemnobs.c" />
+    <ClCompile Include="..\mozjpeg\jquant1.c" />
+    <ClCompile Include="..\mozjpeg\jquant2.c" />
+    <ClCompile Include="..\mozjpeg\jsimd_none.c" />
+    <ClCompile Include="..\mozjpeg\jutils.c" />
+    <ClCompile Include="..\mozjpeg\transupp.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_buf.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_callbacks.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_frame.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_hd.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_hd_huffman.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_hd_huffman_data.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_helper.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_http.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_map.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_mem.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_npn.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_option.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_outbound_item.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_pq.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_priority_spec.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_queue.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_session.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_stream.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_submit.c" />
+    <ClCompile Include="..\nghttp2\lib\nghttp2_version.c" />
+    <ClCompile Include="..\png\png.c" />
+    <ClCompile Include="..\png\pngerror.c" />
+    <ClCompile Include="..\png\pngget.c" />
+    <ClCompile Include="..\png\pngmem.c" />
+    <ClCompile Include="..\png\pngpread.c" />
+    <ClCompile Include="..\png\pngread.c" />
+    <ClCompile Include="..\png\pngrio.c" />
+    <ClCompile Include="..\png\pngrtran.c" />
+    <ClCompile Include="..\png\pngrutil.c" />
+    <ClCompile Include="..\png\pngset.c" />
+    <ClCompile Include="..\png\pngtrans.c" />
+    <ClCompile Include="..\png\pngwio.c" />
+    <ClCompile Include="..\png\pngwrite.c" />
+    <ClCompile Include="..\png\pngwtran.c" />
+    <ClCompile Include="..\png\pngwutil.c" />
+    <ClCompile Include="com_natives_test_Test.cpp" />
+    <ClCompile Include="com_successfactors_saf_framework_video_service_CaptureImage.cpp" />
+    <ClCompile Include="result.cpp" />
+    <ClCompile Include="screen_capture.cpp" />
+    <ClCompile Include="shared_mem.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="test_state.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="wrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Win32Project2.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

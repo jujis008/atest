@@ -1,0 +1,944 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Third-Party">
+      <UniqueIdentifier>{ad956c84-13ce-4662-8fab-046557926b94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\Cximage">
+      <UniqueIdentifier>{9d68becc-4467-4f81-a3f4-5aa7510a7047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\nspr">
+      <UniqueIdentifier>{6a755d16-5609-421f-8282-b97e06cc8b18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\nspr\private">
+      <UniqueIdentifier>{94f78c30-be15-4eeb-9ace-14496e297f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\nspr\obsolete">
+      <UniqueIdentifier>{55cf12df-0118-4f0a-8f54-98c10e888714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\nspr\md">
+      <UniqueIdentifier>{4d745135-93ae-44c2-b1a0-06fecd31350f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\nghttp2">
+      <UniqueIdentifier>{12fcb0b1-c007-48b5-9486-51f7273463af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\mozjpeg">
+      <UniqueIdentifier>{c18f1543-287c-4ba1-84bd-6deffa3a7278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\NCodeHook">
+      <UniqueIdentifier>{5338d3fb-a289-4b5a-ad6b-0895c21363ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\distorm">
+      <UniqueIdentifier>{47857568-c5f2-4a1a-ac23-0aa2d4052fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\Mongoose">
+      <UniqueIdentifier>{f2692778-8798-46f3-bc9a-0315909b0a82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\zlib">
+      <UniqueIdentifier>{a446cd9a-10ea-471a-8aca-403f0d64f15f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\nghttp2\lib">
+      <UniqueIdentifier>{72ced193-e3d7-4674-838c-2ef28cfb4fb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\nghttp2\lib\includes">
+      <UniqueIdentifier>{ffb9210d-de3b-47c5-99dd-5c1e774ebeea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\nghttp2\lib\includes\nghttp2">
+      <UniqueIdentifier>{83522c0c-dc3f-42e2-adb2-5655ddf86d89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Third-Party\nspr\png">
+      <UniqueIdentifier>{54e13819-637d-4511-9c1c-eff41b9eb4a2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="com_natives_test_Test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screen_capture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\xfile.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximabmp.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximacfg.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximadef.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximage.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximagif.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximaico.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximaiter.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximajas.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximajbg.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximajpg.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximamng.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximapcx.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximapng.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximapsd.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximaraw.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximaska.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximatga.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximath.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximatif.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximawbmp.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\ximawmf.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\xiofile.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cximage\xmemfile.h">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\png\png.h">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\png\pngconf.h">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\png\pngdebug.h">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\png\pnginfo.h">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\png\pnglibconf.h">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\png\pngpriv.h">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\png\pngstruct.h">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nspr\prinet.h">
+      <Filter>Third-Party\nspr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nspr\prinrval.h">
+      <Filter>Third-Party\nspr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nspr\prio.h">
+      <Filter>Third-Party\nspr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nspr\prlong.h">
+      <Filter>Third-Party\nspr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nspr\prtime.h">
+      <Filter>Third-Party\nspr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nspr\prtypes.h">
+      <Filter>Third-Party\nspr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nspr\private\pprio.h">
+      <Filter>Third-Party\nspr\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nspr\obsolete\protypes.h">
+      <Filter>Third-Party\nspr\obsolete</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nspr\md\_freebsd.h">
+      <Filter>Third-Party\nspr\md</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nspr\md\_linux.h">
+      <Filter>Third-Party\nspr\md</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nspr\md\_win95.h">
+      <Filter>Third-Party\nspr\md</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nspr\md\_winnt.h">
+      <Filter>Third-Party\nspr\md</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_buf.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_callbacks.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_frame.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_hd.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_hd_huffman.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_helper.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_http.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_int.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_map.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_mem.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_net.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_npn.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_option.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_outbound_item.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_pq.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_priority_spec.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_queue.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_session.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_stream.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\nghttp2_submit.h">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jchuff.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jcmaster.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jconfig.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jconfigint.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jdct.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jdhuff.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jerror.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jinclude.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jmemsys.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jmorecfg.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jpeg_nbits_table.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jpegcomp.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jpegint.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jpeglib.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jsimd.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jsimddct.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\jversion.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mozjpeg\transupp.h">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\NCodeHook\NCodeHook.h">
+      <Filter>Third-Party\NCodeHook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\NCodeHook\NCodeHookInstantiation.h">
+      <Filter>Third-Party\NCodeHook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\NCodeHook\NCodeHookItem.h">
+      <Filter>Third-Party\NCodeHook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\include\distorm.h">
+      <Filter>Third-Party\distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\include\mnemonics.h">
+      <Filter>Third-Party\distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\config.h">
+      <Filter>Third-Party\distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\decoder.h">
+      <Filter>Third-Party\distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\instructions.h">
+      <Filter>Third-Party\distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\insts.h">
+      <Filter>Third-Party\distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\operands.h">
+      <Filter>Third-Party\distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\prefix.h">
+      <Filter>Third-Party\distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\textdefs.h">
+      <Filter>Third-Party\distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\wstring.h">
+      <Filter>Third-Party\distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\x86defs.h">
+      <Filter>Third-Party\distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\mongoose\mongoose.h">
+      <Filter>Third-Party\Mongoose</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\crc32.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\deflate.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\gzguts.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\inffast.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\inffixed.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\inflate.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\trees.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\zconf.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\zlib.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\zutil.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\crypt.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\ioapi.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\iowin32.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\mztools.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\unzip.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\zip.h">
+      <Filter>Third-Party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\includes\nghttp2\nghttp2.h">
+      <Filter>Third-Party\nghttp2\lib\includes\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nghttp2\lib\includes\nghttp2\nghttp2ver.h">
+      <Filter>Third-Party\nghttp2\lib\includes\nghttp2</Filter>
+    </ClInclude>
+    <ClInclude Include="result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testcase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="com_successfactors_saf_framework_video_service_CaptureImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_mem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="com_natives_test_Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screen_capture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\tif_xfile.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximabmp.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximadsp.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximaenc.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximaexif.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximage.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximagif.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximahist.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximaico.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximainfo.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximaint.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximajas.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximajbg.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximajpg.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximalpha.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximalyr.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximamng.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximapal.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximapcx.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximapng.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximapsd.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximaraw.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximasel.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximaska.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximatga.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximath.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximatif.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximatran.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximawbmp.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximawmf.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\ximawnd.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cximage\xmemfile.cpp">
+      <Filter>Third-Party\Cximage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\png.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\pngerror.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\pngget.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\pngmem.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\pngpread.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\pngread.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\pngrio.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\pngrtran.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\pngrutil.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\pngset.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\pngtrans.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\pngwio.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\pngwrite.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\pngwtran.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\png\pngwutil.c">
+      <Filter>Third-Party\nspr\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_buf.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_callbacks.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_frame.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_hd.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_hd_huffman.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_hd_huffman_data.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_helper.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_http.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_map.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_mem.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_npn.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_option.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_outbound_item.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_pq.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_priority_spec.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_queue.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_session.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_stream.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_submit.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nghttp2\lib\nghttp2_version.c">
+      <Filter>Third-Party\nghttp2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jaricom.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jcapimin.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jcapistd.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jccoefct.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jccolor.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jcdctmgr.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jcext.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jchuff.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jcinit.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jcmainct.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jcmarker.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jcmaster.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jcomapi.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jcparam.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jcphuff.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jcprepct.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jcsample.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jctrans.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdapimin.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdapistd.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdatadst.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdatadst-tj.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdatasrc.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdatasrc-tj.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdcoefct.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdcolor.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jddctmgr.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdhuff.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdinput.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdmainct.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdmarker.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdmaster.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdmerge.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdphuff.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdpostct.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdsample.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jdtrans.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jerror.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jfdctflt.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jfdctfst.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jfdctint.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jidctflt.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jidctfst.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jidctint.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jidctred.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jmemmgr.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jmemnobs.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jquant1.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jquant2.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jsimd_none.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\jutils.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mozjpeg\transupp.c">
+      <Filter>Third-Party\mozjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\NCodeHook\NCodeHook.cpp">
+      <Filter>Third-Party\NCodeHook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\NCodeHook\NCodeHookItem.cpp">
+      <Filter>Third-Party\NCodeHook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\include\mnemonics.c">
+      <Filter>Third-Party\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\decoder.c">
+      <Filter>Third-Party\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\distorm.c">
+      <Filter>Third-Party\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\instructions.c">
+      <Filter>Third-Party\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\insts.c">
+      <Filter>Third-Party\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\operands.c">
+      <Filter>Third-Party\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\prefix.c">
+      <Filter>Third-Party\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\textdefs.c">
+      <Filter>Third-Party\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\wstring.c">
+      <Filter>Third-Party\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\distorm\src\x86defs.c">
+      <Filter>Third-Party\distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wpthook\mongoose\mongoose.c">
+      <Filter>Third-Party\Mongoose</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\adler32.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\compress.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\crc32.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\deflate.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\gzclose.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\gzlib.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\gzread.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\gzwrite.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\infback.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\inffast.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\inflate.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\inftrees.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\trees.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\uncompr.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\zutil.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\ioapi.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\iowin32.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\miniunz.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\minizip.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\mztools.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\unzip.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wilson\git\webpagetest\agent\wptdriver\zlib\contrib\minizip\zip.c">
+      <Filter>Third-Party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="result.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="com_successfactors_saf_framework_video_service_CaptureImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shared_mem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Win32Project2.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
